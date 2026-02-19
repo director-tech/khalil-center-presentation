@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khalil Center Rockford - Voices of Our Community</title>
+    <style>
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-SemiBold.ttf') format('truetype');
+            font-weight: 600;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-ExtraBold.ttf') format('truetype');
+            font-weight: 800;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-Black.ttf') format('truetype');
+            font-weight: 900;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-Italic.ttf') format('truetype');
+            font-weight: 400;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-MediumItalic.ttf') format('truetype');
+            font-weight: 500;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-BoldItalic.ttf') format('truetype');
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #3A1560 0%, #6B2FA0 40%, #8B3FB8 70%, #7B35A8 100%);
+            font-family: 'Montserrat', sans-serif;
+            padding: 4vh 5vw;
+        }
+
+        /* Logo watermark on left */
+        .logo-watermark {
+            position: absolute;
+            left: -28%;
+            top: 0;
+            height: 100%;
+            width: auto;
+            opacity: 0.08;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Glow behind logo */
+        .logo-glow {
+            position: absolute;
+            left: -28%;
+            top: 0;
+            width: 70%;
+            height: 100%;
+            background: radial-gradient(ellipse at center, rgba(120, 60, 180, 0.5) 0%, rgba(80, 40, 140, 0.2) 30%, transparent 65%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Top right logo */
+        .top-logo {
+            position: absolute;
+            top: -18vh;
+            right: 2vw;
+            z-index: 2;
+        }
+
+        .top-logo img {
+            height: 54vh;
+            width: auto;
+        }
+
+        /* Main content wrapper */
+        .main-content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Heading */
+        .heading {
+            font-weight: 900;
+            font-size: 4.5vw;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            line-height: 1.08;
+            margin-bottom: 3vh;
+            align-self: flex-start;
+        }
+
+        /* Testimonials container */
+        .testimonials {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2vh;
+            width: 100%;
+        }
+
+        /* Testimonial card */
+        .testimonial {
+            display: flex;
+            align-items: flex-start;
+            gap: 1vw;
+            max-width: 55vw;
+        }
+
+        .testimonial.right-aligned {
+            align-self: flex-end;
+        }
+
+        .testimonial.left-aligned {
+            align-self: flex-start;
+        }
+
+        .card {
+            background: rgba(235, 230, 240, 0.92);
+            border-radius: 1.2vw;
+            padding: 1.8vh 1.8vw;
+            position: relative;
+        }
+
+        .card p {
+            font-weight: 500;
+            font-size: 1.35vw;
+            color: #1A1A1A;
+            line-height: 1.5;
+        }
+
+        .card p strong {
+            font-weight: 800;
+        }
+
+        .stars {
+            text-align: right;
+            margin-top: 0.8vh;
+            font-size: 1.2vw;
+            color: #F5A623;
+            letter-spacing: 0.15em;
+        }
+
+        /* Avatar circle */
+        .avatar {
+            width: 4.2vw;
+            height: 4.2vw;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #5A2D82, #C8A0E0);
+            border: 0.25vw solid rgba(200, 170, 230, 0.8);
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            box-shadow: 0 0 1.2vw rgba(100, 50, 160, 0.4);
+            overflow: hidden;
+        }
+
+        .avatar svg {
+            width: 3.4vw;
+            height: 3.4vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <!-- Logo watermark -->
+        <div class="logo-glow"></div>
+        <img src="Khalil Center White Logo Only No Text.png" class="logo-watermark" alt="">
+
+        <!-- Top right logo -->
+        <div class="top-logo">
+            <img src="Khalil Center - whiteeLogo DesginNEWcolours [Recovered].png" alt="Khalil Center Rockford">
+        </div>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <!-- Heading -->
+            <h1 class="heading">Voices of<br>Our Community</h1>
+
+            <!-- Testimonials -->
+            <div class="testimonials">
+            <!-- Testimonial 1 - left aligned -->
+            <div class="testimonial left-aligned">
+                <div class="card">
+                    <p>The spirituality in the digital age program <strong>really helped my family to change our habits.</strong> I believe we all learned something from the youth panel and Shaykh. Thank you for bringing this work to Rockford.</p>
+                    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                </div>
+                <div class="avatar">
+                    <svg viewBox="0 0 32 36" fill="none">
+                        <circle cx="16" cy="11" r="6.5" fill="rgba(255,255,255,0.9)"/>
+                        <path d="M2 36 Q2 22 16 22 Q30 22 30 36 L2 36Z" fill="rgba(255,255,255,0.9)"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 - right aligned -->
+            <div class="testimonial right-aligned">
+                <div class="card">
+                    <p>JazakumAllahu khairan for <strong>giving young adults</strong> and <strong>youth a voice.</strong> We need it.</p>
+                    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                </div>
+                <div class="avatar">
+                    <svg viewBox="0 0 32 36" fill="none">
+                        <circle cx="16" cy="11" r="6.5" fill="rgba(255,255,255,0.9)"/>
+                        <path d="M2 36 Q2 22 16 22 Q30 22 30 36 L2 36Z" fill="rgba(255,255,255,0.9)"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 - left aligned -->
+            <div class="testimonial left-aligned">
+                <div class="avatar">
+                    <svg viewBox="0 0 32 36" fill="none">
+                        <circle cx="16" cy="11" r="6.5" fill="rgba(255,255,255,0.9)"/>
+                        <path d="M2 36 Q2 22 16 22 Q30 22 30 36 L2 36Z" fill="rgba(255,255,255,0.9)"/>
+                    </svg>
+                </div>
+                <div class="card">
+                    <p>Khalil center has helped a friend of mine and I know this work is really needed. <strong>Young people are struggling</strong> and this project gives me hope for the future of our community.</p>
+                    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

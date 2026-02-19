@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khalil Center Rockford - Strategic Plans 2026</title>
+    <style>
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-SemiBold.ttf') format('truetype');
+            font-weight: 600;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-ExtraBold.ttf') format('truetype');
+            font-weight: 800;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-Black.ttf') format('truetype');
+            font-weight: 900;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-Italic.ttf') format('truetype');
+            font-weight: 400;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-MediumItalic.ttf') format('truetype');
+            font-weight: 500;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-BoldItalic.ttf') format('truetype');
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            background: #EAECF1;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 5.5vh 5.5vw;
+        }
+
+        /* ── Title Section ── */
+        .title-section {
+        }
+
+        .title-row1 {
+            display: flex;
+            align-items: flex-start;
+            gap: 2vw;
+        }
+
+        .title-left {
+            flex-shrink: 0;
+        }
+
+        .title-line1 {
+            font-weight: 900;
+            font-size: 5.2vw;
+            color: #B5294E;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            line-height: 1.0;
+        }
+
+        .title-line2 {
+            font-weight: 900;
+            font-size: 5.2vw;
+            color: #1A1A1A;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            line-height: 1.05;
+        }
+
+        .title-right {
+            font-weight: 700;
+            font-size: 1.45vw;
+            color: #555555;
+            line-height: 1.395;
+            letter-spacing: -0.02em;
+            max-width: 18vw;
+            text-align: left;
+            padding-top: 1vh;
+        }
+
+        /* ── Columns Section ── */
+        .columns {
+            display: flex;
+            gap: 4vw;
+        }
+
+        .col {
+            flex: 1;
+        }
+
+        /* Vertical divider between columns */
+        .col + .col {
+            border-left: 2px solid #1A1A1A;
+            padding-left: 4vw;
+        }
+
+        .col-header {
+            display: flex;
+            align-items: center;
+            gap: 0.8vw;
+            margin-bottom: 0.8vh;
+        }
+
+        .col-icon {
+            width: 3.6vw;
+            height: 3.6vw;
+            flex-shrink: 0;
+        }
+
+        .col-heading {
+            font-weight: 900;
+            font-size: 2.5vw;
+            color: #1A1A1A;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            line-height: 1.08;
+        }
+
+        .col ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 2.2vh;
+        }
+
+        .col ul li {
+            font-weight: 500;
+            font-size: 1.15vw;
+            color: #1A1A1A;
+            line-height: 1.55;
+            margin-bottom: 2vh;
+            padding-left: 1.5vw;
+            position: relative;
+        }
+
+        .col ul li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.4vw;
+            color: #1A1A1A;
+            line-height: 1.35;
+        }
+
+        .col ul li strong {
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <!-- Title Section -->
+        <div class="title-section">
+            <div class="title-row1">
+                <div class="title-left">
+                    <h1 class="title-line1">Strategic</h1>
+                    <h1 class="title-line2">Plans 2026</h1>
+                </div>
+                <div class="title-right">
+                    A Roadmap<br>
+                    for Sustainable<br>
+                    Community Impact.
+                </div>
+            </div>
+        </div>
+
+        <!-- Two Columns -->
+        <div class="columns">
+            <!-- Left Column: CLINICAL EXPANSION -->
+            <div class="col">
+                <div class="col-header">
+                    <!-- Gear/Cog with Plus Icon -->
+                    <svg class="col-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Outer gear teeth -->
+                        <path d="M32 4 L36 4 L37.5 10 L40 11 L45 6.5 L48 9.5 L44 14.5 L45.5 17 L52 17.5 L52 21.5 L45.5 23 L44 25.5 L48 30.5 L45 33.5 L40 29 L37.5 30 L36 36 L32 36 L30.5 30 L28 29 L23 33.5 L20 30.5 L24 25.5 L22.5 23 L16 21.5 L16 17.5 L22.5 17 L24 14.5 L20 9.5 L23 6.5 L28 11 L30.5 10 Z" stroke="#B5294E" stroke-width="1.8" fill="none"/>
+                        <!-- Inner circle -->
+                        <circle cx="34" cy="20" r="5.5" stroke="#B5294E" stroke-width="1.8" fill="none"/>
+                        <!-- Plus sign inside -->
+                        <line x1="34" y1="16.5" x2="34" y2="23.5" stroke="#B5294E" stroke-width="1.8"/>
+                        <line x1="30.5" y1="20" x2="37.5" y2="20" stroke="#B5294E" stroke-width="1.8"/>
+                        <!-- Small radiating lines (sun rays) -->
+                        <line x1="34" y1="2" x2="34" y2="0" stroke="#B5294E" stroke-width="1.2" stroke-linecap="round"/>
+                        <line x1="46" y1="4" x2="48" y2="2" stroke="#B5294E" stroke-width="1.2" stroke-linecap="round"/>
+                        <line x1="54" y1="14" x2="56" y2="13" stroke="#B5294E" stroke-width="1.2" stroke-linecap="round"/>
+                        <line x1="22" y1="4" x2="20" y2="2" stroke="#B5294E" stroke-width="1.2" stroke-linecap="round"/>
+                        <line x1="14" y1="14" x2="12" y2="13" stroke="#B5294E" stroke-width="1.2" stroke-linecap="round"/>
+                        <!-- Small dots at ray tips -->
+                        <circle cx="34" cy="0" r="1.2" fill="#B5294E"/>
+                        <circle cx="48" cy="2" r="1.2" fill="#B5294E"/>
+                        <circle cx="56" cy="13" r="1.2" fill="#B5294E"/>
+                        <circle cx="20" cy="2" r="1.2" fill="#B5294E"/>
+                        <circle cx="12" cy="13" r="1.2" fill="#B5294E"/>
+                    </svg>
+                    <h2 class="col-heading">Clinical<br>Expansion</h2>
+                </div>
+                <ul>
+                    <li>Establish a <strong>full-service family counseling clinic.</strong></li>
+                    <li>Hire <strong>additional part time licensed counselor</strong> to expand service capacity.</li>
+                    <li>Target clinic open date: <strong>Quarter 3, 2026</strong></li>
+                </ul>
+            </div>
+
+            <!-- Right Column: PROGRAM GROWTH -->
+            <div class="col">
+                <div class="col-header">
+                    <!-- Gear/Cog with Upload Arrow Icon -->
+                    <svg class="col-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Outer gear teeth -->
+                        <path d="M32 8 L36 8 L37.5 14 L40 15 L45 10.5 L48 13.5 L44 18.5 L45.5 21 L52 21.5 L52 25.5 L45.5 27 L44 29.5 L48 34.5 L45 37.5 L40 33 L37.5 34 L36 40 L32 40 L30.5 34 L28 33 L23 37.5 L20 34.5 L24 29.5 L22.5 27 L16 25.5 L16 21.5 L22.5 21 L24 18.5 L20 13.5 L23 10.5 L28 15 L30.5 14 Z" stroke="#B5294E" stroke-width="1.8" fill="none"/>
+                        <!-- Inner circle -->
+                        <circle cx="34" cy="24" r="7" stroke="#B5294E" stroke-width="1.8" fill="none"/>
+                        <!-- Upward arrow inside -->
+                        <line x1="34" y1="28" x2="34" y2="19" stroke="#B5294E" stroke-width="2"/>
+                        <polyline points="30,22.5 34,19 38,22.5" stroke="#B5294E" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h2 class="col-heading">Program<br>Growth</h2>
+                </div>
+                <ul>
+                    <li>Expand the <strong>therapeutic art program</strong> to serve more youth and families.</li>
+                    <li>Launch a <strong>parenting coaching program</strong> focused on prevention, skills-building, and family resilience.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

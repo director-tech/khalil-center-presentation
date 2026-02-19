@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khalil Center Rockford - Youth Development & Community Education</title>
+    <style>
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-SemiBold.ttf') format('truetype');
+            font-weight: 600;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-ExtraBold.ttf') format('truetype');
+            font-weight: 800;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-Black.ttf') format('truetype');
+            font-weight: 900;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-Italic.ttf') format('truetype');
+            font-weight: 400;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-MediumItalic.ttf') format('truetype');
+            font-weight: 500;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-BoldItalic.ttf') format('truetype');
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            background: #1E0A2E;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            align-items: center;
+            padding: 5.5vh 5.5vw;
+        }
+
+        /* Glow effect behind logo */
+        .logo-glow {
+            position: absolute;
+            left: -28%;
+            top: 0;
+            width: 70%;
+            height: 100%;
+            background: radial-gradient(ellipse at center, rgba(90, 50, 120, 0.65) 0%, rgba(60, 30, 90, 0.3) 30%, rgba(30, 10, 46, 0) 65%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Logo watermark */
+        .logo-watermark {
+            position: absolute;
+            left: -28%;
+            top: 0;
+            height: 100%;
+            width: auto;
+            opacity: 0.06;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* ── Columns Layout ── */
+        .columns {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            gap: 4vw;
+            width: 100%;
+        }
+
+        .col {
+            flex: 1;
+        }
+
+        /* Vertical divider */
+        .col + .col {
+            border-left: 2px solid rgba(255, 255, 255, 0.4);
+            padding-left: 4vw;
+        }
+
+        .col-icon {
+            width: 4.5vw;
+            height: 4.5vw;
+            margin-bottom: 1.5vh;
+        }
+
+        .col-heading {
+            font-weight: 900;
+            font-size: 3vw;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            line-height: 1.08;
+            margin-bottom: 2.5vh;
+        }
+
+        .col ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .col ul li {
+            font-weight: 500;
+            font-size: 1.6vw;
+            color: #FFFFFF;
+            line-height: 1.55;
+            margin-bottom: 2.5vh;
+            padding-left: 2vw;
+            position: relative;
+        }
+
+        .col ul li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.9vw;
+            color: #FFFFFF;
+            line-height: 1.35;
+        }
+
+        .col ul li strong {
+            font-weight: 800;
+        }
+
+        .num-highlight {
+            font-weight: 900;
+            font-size: 2vw;
+            color: #D94A6A;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <!-- Glow behind logo -->
+        <div class="logo-glow"></div>
+        <!-- Logo watermark on left side -->
+        <img src="Khalil Center White Logo Only No Text.png" class="logo-watermark" alt="">
+
+        <!-- Two Columns -->
+        <div class="columns">
+            <!-- Left Column: YOUTH DEVELOPMENT -->
+            <div class="col">
+                <!-- Youth/People with arrows icon -->
+                <svg class="col-icon" viewBox="0 0 64 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Center person -->
+                    <circle cx="32" cy="22" r="4.5" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+                    <path d="M23 44 Q23 32 32 32 Q41 32 41 44" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+                    <!-- Left person -->
+                    <circle cx="16" cy="28" r="3.5" stroke="#FFFFFF" stroke-width="1.8" fill="none"/>
+                    <path d="M9 46 Q9 36 16 36 Q21 36 23 39" stroke="#FFFFFF" stroke-width="1.8" fill="none"/>
+                    <!-- Right person -->
+                    <circle cx="48" cy="28" r="3.5" stroke="#FFFFFF" stroke-width="1.8" fill="none"/>
+                    <path d="M55 46 Q55 36 48 36 Q43 36 41 39" stroke="#FFFFFF" stroke-width="1.8" fill="none"/>
+                    <!-- Upward arrows -->
+                    <line x1="24" y1="16" x2="24" y2="4" stroke="#FFFFFF" stroke-width="1.8"/>
+                    <polyline points="21,7 24,4 27,7" stroke="#FFFFFF" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <line x1="32" y1="14" x2="32" y2="2" stroke="#FFFFFF" stroke-width="1.8"/>
+                    <polyline points="29,5 32,2 35,5" stroke="#FFFFFF" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <line x1="40" y1="16" x2="40" y2="4" stroke="#FFFFFF" stroke-width="1.8"/>
+                    <polyline points="37,7 40,4 43,7" stroke="#FFFFFF" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h2 class="col-heading">Youth<br>Development</h2>
+                <ul>
+                    <li>Hire and onboard <span class="num-highlight">2</span> <strong>youth interns</strong> through grant-supported positions.</li>
+                    <li>Establish a <strong>youth mentoring and career guidance program,</strong> integrating mental health, leadership, and vocational exposure.</li>
+                </ul>
+            </div>
+
+            <!-- Right Column: ONGOING COMMUNITY EDUCATION -->
+            <div class="col">
+                <!-- People with education/speech bubble icon -->
+                <svg class="col-icon" viewBox="0 0 64 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Speech/education bubbles -->
+                    <rect x="18" y="2" width="28" height="16" rx="3" stroke="#FFFFFF" stroke-width="1.8" fill="none"/>
+                    <line x1="26" y1="7" x2="38" y2="7" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="26" y1="11" x2="38" y2="11" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="26" y1="15" x2="34" y2="15" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+                    <!-- Pointer -->
+                    <polygon points="28,18 32,23 36,18" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+                    <!-- Center person -->
+                    <circle cx="32" cy="30" r="4" stroke="#FFFFFF" stroke-width="1.8" fill="none"/>
+                    <path d="M24 48 Q24 38 32 38 Q40 38 40 48" stroke="#FFFFFF" stroke-width="1.8" fill="none"/>
+                    <!-- Left person -->
+                    <circle cx="17" cy="36" r="3.5" stroke="#FFFFFF" stroke-width="1.8" fill="none"/>
+                    <path d="M10 50 Q10 42 17 42 Q22 42 24 44" stroke="#FFFFFF" stroke-width="1.8" fill="none"/>
+                    <!-- Right person -->
+                    <circle cx="47" cy="36" r="3.5" stroke="#FFFFFF" stroke-width="1.8" fill="none"/>
+                    <path d="M54 50 Q54 42 47 42 Q42 42 40 44" stroke="#FFFFFF" stroke-width="1.8" fill="none"/>
+                </svg>
+                <h2 class="col-heading">Ongoing<br>Community<br>Education</h2>
+                <ul>
+                    <li>Continue offering <strong>regular community seminars</strong> on mental health, wellness, parenting, and faith integrated care.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

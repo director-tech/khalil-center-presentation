@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khalil Center Rockford - Our Vision</title>
+    <style>
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-SemiBold.ttf') format('truetype');
+            font-weight: 600;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-ExtraBold.ttf') format('truetype');
+            font-weight: 800;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-Black.ttf') format('truetype');
+            font-weight: 900;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-BlackItalic.ttf') format('truetype');
+            font-weight: 900;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-BoldItalic.ttf') format('truetype');
+            font-weight: 700;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-Italic.ttf') format('truetype');
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            background: #B5294E;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Geometric faceted background */
+        .geo-bg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        /* Barely visible white logo watermark - half off-screen on right */
+        .logo-watermark {
+            position: absolute;
+            right: -18%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 55%;
+            opacity: 0.06;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        /* Content layer */
+        .content {
+            position: relative;
+            z-index: 2;
+            padding: 5.5vh 5.5vw 5.5vh 5.5vw;
+            max-width: 100%;
+        }
+
+        .title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-style: italic;
+            font-size: 4.2vw;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            margin-bottom: 2.8vh;
+            line-height: 1.1;
+        }
+
+        .body-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 1.62vw;
+            color: #FFFFFF;
+            line-height: 1.78;
+            text-align: justify;
+            max-width: 92%;
+            letter-spacing: 0.005em;
+            word-spacing: 0.04em;
+        }
+
+        .body-text strong {
+            font-weight: 700;
+        }
+
+        .body-text u {
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1.5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <!-- No geometric shapes - clean background -->
+
+        <!-- Barely visible white logo on the right side -->
+        <img src="Khalil Center White Logo Only No Text.png" class="logo-watermark" alt="">
+
+        <!-- Slide content -->
+        <div class="content">
+            <h1 class="title">Our Vision:</h1>
+            <p class="body-text">
+                <strong>Our vision</strong> is to establish Khalil Center Rockford as a comprehensive <u><strong>Islamic Family Wellness Center</strong></u>, while also supporting youth mentoring and offering career counseling services. By leveraging our partnership with Khalil Center's School of Islamic Psychology and utilizing their robust parent coaching curriculum, <strong>we aim</strong> to make <u>Rockford a model for holistic parenting, youth development, and community well-being.</u> Our programs, informed by community feedback and a thorough needs assessment, have already shown significant improvements in individual and family behaviors. With a data-driven approach, we are committed to providing tailored support to meet the diverse needs of our community. Your support and duas are deeply appreciated as we work toward building a resilient and thriving community.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

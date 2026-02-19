@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khalil Center Rockford - Therapeutic & Creative Programming / Funding & Development</title>
+    <style>
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-SemiBold.ttf') format('truetype');
+            font-weight: 600;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-ExtraBold.ttf') format('truetype');
+            font-weight: 800;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-Black.ttf') format('truetype');
+            font-weight: 900;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-Italic.ttf') format('truetype');
+            font-weight: 400;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-MediumItalic.ttf') format('truetype');
+            font-weight: 500;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-BoldItalic.ttf') format('truetype');
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            background: #EAECF1;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            align-items: center;
+            padding: 5.5vh 5.5vw;
+        }
+
+        /* ── Columns Layout ── */
+        .columns {
+            display: flex;
+            gap: 4vw;
+            width: 100%;
+        }
+
+        .col {
+            flex: 1;
+        }
+
+        /* Vertical divider */
+        .col + .col {
+            border-left: 2px solid #1A1A1A;
+            padding-left: 4vw;
+        }
+
+        .col-header {
+            display: flex;
+            align-items: center;
+            gap: 1vw;
+            margin-bottom: 1vh;
+        }
+
+        .col-icon {
+            width: 5vw;
+            height: 5vw;
+            flex-shrink: 0;
+        }
+
+        .col-heading {
+            font-weight: 900;
+            font-size: 3vw;
+            color: #1A1A1A;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            line-height: 1.08;
+        }
+
+        .col-subtitle {
+            font-weight: 700;
+            font-style: italic;
+            font-size: 1.7vw;
+            color: #555555;
+            margin-bottom: 2.5vh;
+        }
+
+        .col ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .col ul li {
+            font-weight: 500;
+            font-size: 1.6vw;
+            color: #1A1A1A;
+            line-height: 1.55;
+            margin-bottom: 2vh;
+            padding-left: 2vw;
+            position: relative;
+        }
+
+        .col ul li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.9vw;
+            color: #1A1A1A;
+            line-height: 1.35;
+        }
+
+        .col ul li strong {
+            font-weight: 800;
+        }
+
+        .num-highlight {
+            font-weight: 900;
+            font-size: 2vw;
+            color: #B5294E;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <!-- Two Columns -->
+        <div class="columns">
+            <!-- Left Column: THERAPEUTIC & CREATIVE PROGRAMMING -->
+            <div class="col">
+                <div class="col-header">
+                    <!-- Heart with lotus/flower icon -->
+                    <svg class="col-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Heart shape -->
+                        <path d="M32 22 C32 14, 20 8, 14 16 C8 24, 14 32, 32 44 C50 32, 56 24, 50 16 C44 8, 32 14, 32 22Z" stroke="#B5294E" stroke-width="2" fill="none"/>
+                        <!-- Lotus petals inside heart -->
+                        <path d="M32 34 Q28 28 32 24 Q36 28 32 34" stroke="#B5294E" stroke-width="1.5" fill="none"/>
+                        <path d="M32 34 Q25 30 28 24" stroke="#B5294E" stroke-width="1.5" fill="none"/>
+                        <path d="M32 34 Q39 30 36 24" stroke="#B5294E" stroke-width="1.5" fill="none"/>
+                        <!-- Small person below -->
+                        <circle cx="32" cy="52" r="3" stroke="#B5294E" stroke-width="1.5" fill="none"/>
+                        <line x1="32" y1="55" x2="32" y2="62" stroke="#B5294E" stroke-width="1.5"/>
+                        <line x1="28" y1="58" x2="36" y2="58" stroke="#B5294E" stroke-width="1.5"/>
+                    </svg>
+                    <h2 class="col-heading">Therapeutic<br>& Creative<br>Programming</h2>
+                </div>
+                <p class="col-subtitle">Healing through expression</p>
+                <ul>
+                    <li>Launched <strong>Art Therapy program.</strong></li>
+                    <li>Conducted <span class="num-highlight">3</span> therapeutic art therapy session supporting <strong>emotional wellness.</strong></li>
+                </ul>
+            </div>
+
+            <!-- Right Column: FUNDING & DEVELOPMENT -->
+            <div class="col">
+                <div class="col-header">
+                    <!-- Seedling with dollar sign and arrows icon -->
+                    <svg class="col-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Stem -->
+                        <line x1="32" y1="30" x2="32" y2="54" stroke="#B5294E" stroke-width="2"/>
+                        <!-- Ground/roots -->
+                        <path d="M22 54 Q27 48 32 54 Q37 48 42 54" stroke="#B5294E" stroke-width="2" fill="none"/>
+                        <!-- Leaves/branches -->
+                        <path d="M32 42 Q24 38 22 30 Q30 32 32 42" stroke="#B5294E" stroke-width="1.8" fill="none"/>
+                        <path d="M32 36 Q40 32 42 24 Q34 26 32 36" stroke="#B5294E" stroke-width="1.8" fill="none"/>
+                        <!-- Dollar circle on top -->
+                        <circle cx="32" cy="18" r="8" stroke="#B5294E" stroke-width="2" fill="none"/>
+                        <text x="32" y="22" text-anchor="middle" font-size="12" font-weight="700" fill="#B5294E" font-family="Montserrat, sans-serif">$</text>
+                        <!-- Upward arrows -->
+                        <line x1="18" y1="22" x2="18" y2="8" stroke="#B5294E" stroke-width="1.8"/>
+                        <polyline points="15,11 18,8 21,11" stroke="#B5294E" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="46" y1="22" x2="46" y2="8" stroke="#B5294E" stroke-width="1.8"/>
+                        <polyline points="43,11 46,8 49,11" stroke="#B5294E" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h2 class="col-heading">Funding &<br>Development</h2>
+                </div>
+                <p class="col-subtitle">Investing in future growth</p>
+                <ul>
+                    <li>Secured <span class="num-highlight">$2,500</span> in grant funding from Winnebago County.</li>
+                    <li>Received preliminary grant approval for <span class="num-highlight">2</span> youth intern positions, supporting <strong>workforce development</strong> and <strong>youth engagement.</strong></li>
+                    <li>Delivered holistic <strong>youth career readiness evaluations.</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
