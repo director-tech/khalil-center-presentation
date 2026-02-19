@@ -13,30 +13,31 @@
         html, body { width: 100%; height: 100%; overflow: hidden; background: #000; }
         .slide {
             width: 100vw; height: 100vh; position: relative; overflow: hidden;
-            background: #1E0A2E;
+            background: #FFFFFF;
             font-family: 'Montserrat', sans-serif;
             display: flex; flex-direction: column; align-items: center; justify-content: center;
         }
-        .logo-watermark { position: absolute; right: -28%; top: 0; height: 100%; width: auto; opacity: 0.06; pointer-events: none; z-index: 0; }
-        .logo-glow { position: absolute; right: -28%; top: 0; width: 70%; height: 100%; background: radial-gradient(ellipse at center, rgba(90,50,120,0.65) 0%, rgba(60,30,90,0.3) 30%, rgba(30,10,46,0) 65%); pointer-events: none; z-index: 0; }
+        .logo-watermark { position: absolute; right: -20%; top: 50%; transform: translateY(-50%); width: 50%; opacity: 0.04; pointer-events: none; z-index: 0; }
         .content { position: relative; z-index: 1; text-align: center; }
-        .crescent { font-size: 8vw; margin-bottom: 2vh; display: block; color: #D4AF37; }
-        .ramadan { font-weight: 900; font-style: italic; font-size: 6vw; color: #FFFFFF; text-transform: uppercase; letter-spacing: 0.04em; line-height: 1.05; }
-        .mubarak { font-weight: 900; font-size: 6vw; color: #D4AF37; text-transform: uppercase; letter-spacing: 0.04em; line-height: 1.05; margin-bottom: 3vh; }
-        .from-line { font-weight: 500; font-size: 1.8vw; color: rgba(255,255,255,0.8); letter-spacing: 0.15em; margin-bottom: 2vh; }
-        .logo-main { height: 12vh; width: auto; }
+        .crescent { font-size: 5vh; margin-bottom: 1vh; display: block; color: #B5294E; }
+        .ramadan { font-weight: 900; font-style: italic; font-size: 9vh; color: #B5294E; text-transform: uppercase; letter-spacing: 0.04em; line-height: 1.05; }
+        .mubarak { font-weight: 900; font-size: 9vh; color: #1A1A1A; text-transform: uppercase; letter-spacing: 0.04em; line-height: 1.05; margin-bottom: 2vh; }
+        .from-line { font-weight: 500; font-size: 2vh; color: rgba(0,0,0,0.4); letter-spacing: 0.15em; margin-bottom: 2vh; }
+        .logo-wrap { width: 42.75vw; height: 20.9vh; overflow: hidden; display: flex; align-items: center; justify-content: center; margin-top: -6vh; margin-left: 2vw; }
+        .logo-main { width: 142.5%; height: auto; max-width: none; }
     </style>
 </head>
 <body>
     <div class="slide">
-        <div class="logo-glow"></div>
-        <img src="Khalil Center White Logo Only No Text.png" class="logo-watermark" alt="">
+        <img src="Khalil Center Red Logo Only No Text.png" class="logo-watermark" alt="">
         <div class="content">
             <span class="crescent">&#9790;</span>
             <h1 class="ramadan">Ramadan</h1>
             <h1 class="mubarak">Mubarak</h1>
             <p class="from-line">FROM</p>
-            <img src="Khalil Center - whiteeLogo DesginNEWcolours [Recovered].png" class="logo-main" alt="Khalil Center Rockford">
+            <div class="logo-wrap">
+                <img src="Khalil Center - Logo DesginNEWcolours [Recovered].png" class="logo-main" alt="Khalil Center Rockford">
+            </div>
         </div>
     </div>
 </body>

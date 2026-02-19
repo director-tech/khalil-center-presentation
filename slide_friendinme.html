@@ -23,19 +23,12 @@
         .content { position: relative; z-index: 1; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 3vh; }
 
         .campaign-badge {
-            display: inline-flex; align-items: center; justify-content: center;
-            width: 14vw; height: 14vw; border-radius: 50%;
-            background: #B5294E; position: relative;
-            box-shadow: 0 0.5vh 3vh rgba(181, 41, 78, 0.4);
+            width: 18vh; height: 18vh; border-radius: 50%; overflow: hidden;
+            box-shadow: 0 0.5vh 3vh rgba(181, 41, 78, 0.3);
         }
-        .campaign-badge-inner {
-            width: 12vw; height: 12vw; border-radius: 50%;
-            border: 0.3vw solid rgba(255,255,255,0.5);
-            display: flex; flex-direction: column; align-items: center; justify-content: center;
-            text-align: center; padding: 1vw;
+        .campaign-badge img {
+            width: 100%; height: 100%; object-fit: cover; border-radius: 50%;
         }
-        .badge-icon { font-size: 3vw; margin-bottom: 0.5vh; }
-        .badge-text { font-weight: 900; font-size: 1.3vw; color: #FFFFFF; text-transform: uppercase; line-height: 1.2; }
 
         .heading { font-weight: 900; font-size: 3.8vw; color: #1A1A1A; text-transform: uppercase; letter-spacing: 0.02em; line-height: 1.1; }
         .heading span { color: #B5294E; }
@@ -50,15 +43,12 @@
         <img src="Khalil Center Red Logo Only No Text.png" class="logo-watermark" alt="">
         <div class="content">
             <div class="campaign-badge">
-                <div class="campaign-badge-inner">
-                    <span class="badge-icon">&#129309;</span>
-                    <span class="badge-text">You've Got<br>a Friend<br>in Me</span>
-                </div>
+                <img src="Button Template copy 2.png" alt="You've Got a Friend in Me button">
             </div>
             <h1 class="heading">"You've Got a <span>Friend</span> in Me"</h1>
             <p class="subtitle">Ramadan Campaign</p>
             <p class="desc">Throughout the month of Ramadan, look for our <strong>team members wearing the "You've Got a Friend in Me" button.</strong> They are here to connect, support, and listen.</p>
-            <div class="cta">Spot the button. Say hello. You're not alone.</div>
+            <div class="cta">If you want one for free, ask one of our team members.</div>
         </div>
     </div>
 </body>
