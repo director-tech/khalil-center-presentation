@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You've Got a Friend in Me Campaign</title>
+    <style>
+        @font-face { font-family: 'Montserrat'; src: url('Montserrat-Black.ttf') format('truetype'); font-weight: 900; font-style: normal; }
+        @font-face { font-family: 'Montserrat'; src: url('Montserrat-Bold.ttf') format('truetype'); font-weight: 700; font-style: normal; }
+        @font-face { font-family: 'Montserrat'; src: url('Montserrat-ExtraBold.ttf') format('truetype'); font-weight: 800; font-style: normal; }
+        @font-face { font-family: 'Montserrat'; src: url('Montserrat-Medium.ttf') format('truetype'); font-weight: 500; font-style: normal; }
+        @font-face { font-family: 'Montserrat'; src: url('Montserrat-BoldItalic.ttf') format('truetype'); font-weight: 700; font-style: italic; }
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { width: 100%; height: 100%; overflow: hidden; background: #000; }
+        .slide {
+            width: 100vw; height: 100vh; position: relative; overflow: hidden;
+            background: #EAECF1;
+            font-family: 'Montserrat', sans-serif;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            padding: 5vh 5vw;
+        }
+        .logo-watermark { position: absolute; right: -20%; top: 50%; transform: translateY(-50%); width: 50%; opacity: 0.04; pointer-events: none; z-index: 0; }
+        .content { position: relative; z-index: 1; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 3vh; }
+
+        .campaign-badge {
+            display: inline-flex; align-items: center; justify-content: center;
+            width: 14vw; height: 14vw; border-radius: 50%;
+            background: #B5294E; position: relative;
+            box-shadow: 0 0.5vh 3vh rgba(181, 41, 78, 0.4);
+        }
+        .campaign-badge-inner {
+            width: 12vw; height: 12vw; border-radius: 50%;
+            border: 0.3vw solid rgba(255,255,255,0.5);
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            text-align: center; padding: 1vw;
+        }
+        .badge-icon { font-size: 3vw; margin-bottom: 0.5vh; }
+        .badge-text { font-weight: 900; font-size: 1.3vw; color: #FFFFFF; text-transform: uppercase; line-height: 1.2; }
+
+        .heading { font-weight: 900; font-size: 3.8vw; color: #1A1A1A; text-transform: uppercase; letter-spacing: 0.02em; line-height: 1.1; }
+        .heading span { color: #B5294E; }
+        .subtitle { font-weight: 700; font-style: italic; font-size: 1.7vw; color: #555555; }
+        .desc { font-weight: 500; font-size: 1.5vw; color: #1A1A1A; line-height: 1.6; max-width: 55vw; }
+        .desc strong { font-weight: 800; }
+        .cta { font-weight: 800; font-size: 1.4vw; color: #B5294E; background: rgba(181, 41, 78, 0.1); padding: 1.5vh 3vw; border-radius: 0.5vw; display: inline-block; text-transform: uppercase; letter-spacing: 0.05em; }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <img src="Khalil Center Red Logo Only No Text.png" class="logo-watermark" alt="">
+        <div class="content">
+            <div class="campaign-badge">
+                <div class="campaign-badge-inner">
+                    <span class="badge-icon">&#129309;</span>
+                    <span class="badge-text">You've Got<br>a Friend<br>in Me</span>
+                </div>
+            </div>
+            <h1 class="heading">"You've Got a <span>Friend</span> in Me"</h1>
+            <p class="subtitle">Ramadan Campaign</p>
+            <p class="desc">Throughout the month of Ramadan, look for our <strong>team members wearing the "You've Got a Friend in Me" button.</strong> They are here to connect, support, and listen.</p>
+            <div class="cta">Spot the button. Say hello. You're not alone.</div>
+        </div>
+    </div>
+</body>
+</html>

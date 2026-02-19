@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Three Thirds of Ramadan</title>
+    <style>
+        @font-face { font-family: 'Montserrat'; src: url('Montserrat-Black.ttf') format('truetype'); font-weight: 900; font-style: normal; }
+        @font-face { font-family: 'Montserrat'; src: url('Montserrat-Bold.ttf') format('truetype'); font-weight: 700; font-style: normal; }
+        @font-face { font-family: 'Montserrat'; src: url('Montserrat-Medium.ttf') format('truetype'); font-weight: 500; font-style: normal; }
+        @font-face { font-family: 'Montserrat'; src: url('Montserrat-BoldItalic.ttf') format('truetype'); font-weight: 700; font-style: italic; }
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { width: 100%; height: 100%; overflow: hidden; background: #000; }
+        .slide {
+            width: 100vw; height: 100vh; position: relative; overflow: hidden;
+            background: #1E0A2E;
+            font-family: 'Montserrat', sans-serif;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            padding: 5vh 5vw;
+        }
+        .logo-watermark { position: absolute; left: -28%; top: 0; height: 100%; width: auto; opacity: 0.06; pointer-events: none; z-index: 0; }
+        .logo-glow { position: absolute; left: -28%; top: 0; width: 70%; height: 100%; background: radial-gradient(ellipse at center, rgba(90,50,120,0.65) 0%, rgba(60,30,90,0.3) 30%, rgba(30,10,46,0) 65%); pointer-events: none; z-index: 0; }
+        .content { position: relative; z-index: 1; width: 100%; }
+        .heading { font-weight: 900; font-size: 3.5vw; color: #FFFFFF; text-transform: uppercase; letter-spacing: 0.02em; text-align: center; margin-bottom: 5vh; }
+        .heading span { color: #D4AF37; }
+        .thirds { display: flex; gap: 3vw; width: 100%; justify-content: center; margin-bottom: 5vh; }
+        .third { flex: 1; max-width: 28vw; text-align: center; padding: 3vh 2vw; border-radius: 1vw; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); }
+        .third-number { font-weight: 900; font-size: 2vw; color: #D4AF37; margin-bottom: 1vh; }
+        .third-days { font-weight: 700; font-size: 1.2vw; color: rgba(255,255,255,0.6); margin-bottom: 2vh; letter-spacing: 0.1em; text-transform: uppercase; }
+        .third-icon { font-size: 4vw; margin-bottom: 1.5vh; display: block; }
+        .third-title { font-weight: 900; font-size: 2.2vw; color: #FFFFFF; text-transform: uppercase; margin-bottom: 1vh; }
+        .third-arabic { font-weight: 700; font-size: 1.6vw; color: #D4AF37; margin-bottom: 1vh; }
+        .third-desc { font-weight: 500; font-size: 1.1vw; color: rgba(255,255,255,0.75); line-height: 1.5; }
+        .hadith-source { font-weight: 700; font-style: italic; font-size: 1.2vw; color: rgba(255,255,255,0.5); text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <div class="logo-glow"></div>
+        <img src="Khalil Center White Logo Only No Text.png" class="logo-watermark" alt="">
+        <div class="content">
+            <h1 class="heading">The <span>Three Thirds</span> of Ramadan</h1>
+            <div class="thirds">
+                <div class="third">
+                    <div class="third-number">1st Third</div>
+                    <div class="third-days">Days 1–10</div>
+                    <span class="third-icon">&#10084;&#65039;</span>
+                    <h2 class="third-title">Mercy</h2>
+                    <p class="third-arabic">Rahma</p>
+                    <p class="third-desc">Allah's mercy descends upon those who fast and seek His closeness.</p>
+                </div>
+                <div class="third">
+                    <div class="third-number">2nd Third</div>
+                    <div class="third-days">Days 11–20</div>
+                    <span class="third-icon">&#128591;</span>
+                    <h2 class="third-title">Forgiveness</h2>
+                    <p class="third-arabic">Maghfira</p>
+                    <p class="third-desc">A time to seek forgiveness and repent for past sins.</p>
+                </div>
+                <div class="third">
+                    <div class="third-number">3rd Third</div>
+                    <div class="third-days">Days 21–30</div>
+                    <span class="third-icon">&#128293;</span>
+                    <h2 class="third-title">Salvation</h2>
+                    <p class="third-arabic">Najat min al-Nar</p>
+                    <p class="third-desc">Salvation from the Hellfire for those who persevere in worship.</p>
+                </div>
+            </div>
+            <p class="hadith-source">— Narrated by Salman al-Farisi (RA)</p>
+        </div>
+    </div>
+</body>
+</html>

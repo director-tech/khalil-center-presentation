@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What This Means for You</title>
+    <style>
+        @font-face { font-family: 'Montserrat'; src: url('Montserrat-Black.ttf') format('truetype'); font-weight: 900; font-style: normal; }
+        @font-face { font-family: 'Montserrat'; src: url('Montserrat-Bold.ttf') format('truetype'); font-weight: 700; font-style: normal; }
+        @font-face { font-family: 'Montserrat'; src: url('Montserrat-ExtraBold.ttf') format('truetype'); font-weight: 800; font-style: normal; }
+        @font-face { font-family: 'Montserrat'; src: url('Montserrat-Medium.ttf') format('truetype'); font-weight: 500; font-style: normal; }
+        @font-face { font-family: 'Montserrat'; src: url('Montserrat-BoldItalic.ttf') format('truetype'); font-weight: 700; font-style: italic; }
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { width: 100%; height: 100%; overflow: hidden; background: #000; }
+        .slide {
+            width: 100vw; height: 100vh; position: relative; overflow: hidden;
+            background: #EAECF1;
+            font-family: 'Montserrat', sans-serif;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            padding: 5vh 5vw;
+        }
+        .logo-watermark { position: absolute; left: -20%; top: 50%; transform: translateY(-50%); width: 50%; opacity: 0.04; pointer-events: none; z-index: 0; }
+        .content { position: relative; z-index: 1; text-align: center; width: 100%; }
+        .heading { font-weight: 900; font-size: 4vw; color: #1A1A1A; text-transform: uppercase; letter-spacing: 0.02em; margin-bottom: 5vh; }
+        .heading span { color: #B5294E; }
+        .cards { display: flex; gap: 3vw; justify-content: center; margin-bottom: 4vh; }
+        .card { flex: 1; max-width: 25vw; background: #FFFFFF; border-radius: 1.2vw; padding: 3.5vh 2vw; text-align: center; box-shadow: 0 0.4vh 2vh rgba(0,0,0,0.08); }
+        .card-icon { margin-bottom: 2vh; }
+        .card-icon svg { width: 5vw; height: 5vw; }
+        .card-title { font-weight: 900; font-size: 1.6vw; color: #1A1A1A; text-transform: uppercase; margin-bottom: 1.5vh; line-height: 1.2; }
+        .card-desc { font-weight: 500; font-size: 1.15vw; color: #555555; line-height: 1.55; }
+        .tagline { font-weight: 700; font-style: italic; font-size: 1.6vw; color: #B5294E; }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <img src="Khalil Center Red Logo Only No Text.png" class="logo-watermark" alt="">
+        <div class="content">
+            <h1 class="heading">What This Means <span>for You</span></h1>
+            <div class="cards">
+                <!-- Card 1: Healthier Marriages -->
+                <div class="card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Two rings interlocked -->
+                            <circle cx="24" cy="32" r="14" stroke="#B5294E" stroke-width="2.2" fill="none"/>
+                            <circle cx="40" cy="32" r="14" stroke="#B5294E" stroke-width="2.2" fill="none"/>
+                            <!-- Heart above -->
+                            <path d="M32 14 C32 10, 26 6, 24 10 C22 14, 26 18, 32 22 C38 18, 42 14, 40 10 C38 6, 32 10, 32 14Z" fill="#B5294E" opacity="0.8"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Healthier<br>Marriages</h3>
+                    <p class="card-desc">Couples who access counseling and wellness resources build stronger, more resilient bonds.</p>
+                </div>
+
+                <!-- Card 2: Stay Married Longer -->
+                <div class="card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Shield with heart -->
+                            <path d="M32 6 L52 14 L52 30 Q52 48 32 58 Q12 48 12 30 L12 14 Z" stroke="#B5294E" stroke-width="2.2" fill="none"/>
+                            <path d="M32 24 C32 20, 26 16, 24 20 C22 24, 26 28, 32 34 C38 28, 42 24, 40 20 C38 16, 32 20, 32 24Z" fill="#B5294E" opacity="0.8"/>
+                            <!-- Checkmark -->
+                            <polyline points="24,36 30,42 42,28" stroke="#B5294E" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Stay Married<br>Longer</h3>
+                    <p class="card-desc">When you get married, you will stay married longer with access to Islamic family wellness support.</p>
+                </div>
+
+                <!-- Card 3: Healthier People -->
+                <div class="card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Person with radiating lines -->
+                            <circle cx="32" cy="18" r="7" stroke="#B5294E" stroke-width="2.2" fill="none"/>
+                            <path d="M20 50 Q20 34 32 34 Q44 34 44 50" stroke="#B5294E" stroke-width="2.2" fill="none"/>
+                            <!-- Radiating wellness lines -->
+                            <line x1="32" y1="4" x2="32" y2="0" stroke="#B5294E" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="42" y1="8" x2="46" y2="4" stroke="#B5294E" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="22" y1="8" x2="18" y2="4" stroke="#B5294E" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="48" y1="16" x2="52" y2="14" stroke="#B5294E" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="16" y1="16" x2="12" y2="14" stroke="#B5294E" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Healthier<br>People</h3>
+                    <p class="card-desc">A community that prioritizes mental health produces stronger individuals, families, and future generations.</p>
+                </div>
+            </div>
+            <p class="tagline">Your support creates lasting change for every family in our community.</p>
+        </div>
+    </div>
+</body>
+</html>
